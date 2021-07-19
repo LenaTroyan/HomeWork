@@ -23,9 +23,9 @@ public class Unit3Task5 {
             a2+=mass2[i];
         }
         System.out.println();
-        if (a1>a2){
+        if (a1/mass1.length>a2/mass2.length){
             System.out.println("Среднее арифметическое массива 1 больше массива 2");
-        } else if (a1<a2){
+        } else if (a1/ mass1.length<a2/ mass2.length){
             System.out.println("Среднее арифметическое массива 2 больше массива 1");}
             else {
                 System.out.println("Средние арифметические массивов равны");

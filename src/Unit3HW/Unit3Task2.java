@@ -7,7 +7,7 @@ public class Unit3Task2 {
             if(i%2!=0)a++;
         }
         int[] mass =new int [a];
-        for(int i=1,b=0;i<=99;i++) {
+        for(int i=1,b=0;i<100;i++) {
             if(i%2!=0){
                 mass[b]=i;
                 System.out.print(mass[b]+" ");
