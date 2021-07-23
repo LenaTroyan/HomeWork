@@ -3,7 +3,7 @@ package Unit4HW;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Unit4Task1 {
+public class Unit4Task5 {
     public static void main(String[] args) {
         System.out.println("Введите размерность матрицы");
         Scanner sc = new Scanner(System.in);
@@ -18,14 +18,18 @@ public class Unit4Task1 {
             }
             System.out.println();
         }
-        int sum = 0;
+        System.out.println();
+        for (int i = 0; i < mass.length; i++) {
+            for (int j = i+1; j < mass.length; j++) {
+                int a = mass[i][j];
+                mass[i][j] = mass[j][i];
+                mass[j][i] = a;
+            }        }
         for (int i = 0; i < n; i++) {
-            int j = i;
-            if (mass[i][j] % 2 == 0) {
-                sum += mass[i][j];
+            for (int j = 0; j < n; j++) {
+                System.out.print(mass[i][j] + " ");
             }
+            System.out.println();
         }
-        System.out.print("Сумма четных элементов " + sum + " ");
     }
 }
-
