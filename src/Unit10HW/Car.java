@@ -40,10 +40,10 @@ class Car {
 
     public boolean start() throws myException {
         int a = (int) (Math.random() * 20);
-       if (a % 2!=0) {
-           return true;
+        if (a % 2 != 0) {
+            return true;
         } else {
-            throw new myException("Ошибка",a);
-
+            throw new myException("Ошибка", a);
         }
-    } }
+    }
+}
